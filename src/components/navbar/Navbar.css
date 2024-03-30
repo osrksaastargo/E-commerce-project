@@ -1,0 +1,108 @@
+.navbar {
+  background-color: #3a4468;
+  color: white;
+  .upper-container {
+    background-color: #434f78;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .contact {
+      margin-top: 0px;
+      display: flex;
+      gap: 20px;
+      cursor: pointer;
+      .call {
+        display: flex;
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
+        span {
+          padding-left: 5px;
+          font-size: 18px;
+          color: aqua;
+        }
+      }
+    }
+    .search {
+      display: flex;
+      .search-button {
+        top: -20px;
+        height: 20px;
+        width: 25px;
+        background-color: #f3c93e;
+        border: none;
+        cursor: pointer;
+        img {
+          width: 13px;
+          height: 14px;
+        }
+      }
+      .search-button:hover {
+        background-color: #716081;
+      }
+    }
+    .account {
+      display: flex;
+      gap: 20px;
+      cursor: pointer;
+      .call {
+        display: flex;
+
+        img {
+          width: 25px;
+          height: 25px;
+          margin-right: 5px;
+        }
+        span {
+          padding-left: 0px;
+          font-size: 18px;
+          color: aqua;
+        }
+        .nav-cart-count {
+          width: 17px;
+          height: 17px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 11px;
+          background: red;
+          color: white;
+          font-size: 12px;
+          margin-top: -5px;
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+  .lower-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    height: 20px;
+    .logo {
+      img {
+        width: 50px;
+        height: 50px;
+        margin-top: -15px;
+      }
+    }
+    .nav-items {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      font-family: Georgia;
+      a {
+        cursor: pointer;
+        color: white;
+      }
+      a:hover {
+        color: #f3c93e;
+      }
+    }
+  }
+}

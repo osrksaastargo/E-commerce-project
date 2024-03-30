@@ -1,0 +1,34 @@
+.why {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .box {
+      width: 350px;
+      height: 300px;
+      background-color: rgb(233, 233, 233);
+      margin: 10px;
+      padding: 20px;
+      -webkit-box-shadow: 10px 10px 16px 10px rgba(0, 0, 0, 0.29);
+      box-shadow: 10px 0px 16px 10px rgba(0, 0, 0, 0.29);
+
+      img {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+      }
+      img:hover {
+        transform: scale(1.1); /* Adjust the scale factor for zoom effect */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adjust the box-shadow for a subtle glow effect */
+      }
+      p {
+        width: 350px;
+      }
+    }
+  }
+}
