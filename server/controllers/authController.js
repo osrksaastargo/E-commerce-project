@@ -6,8 +6,8 @@ const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "ka4005768@gmail.com",
-    pass: "gtnw pajj znps snhq",
+    user: "",
+    pass: "",
   },
 });
 
@@ -77,7 +77,7 @@ const forgotPassword = async (req, res) => {
     await user.save();
 
     const mailOptions = {
-      from: "ka4005768@gmail.com",
+      from: "",
       to: email,
       subject: "Sending Email For password Reset",
       text: `This Link Valid For 2 MINUTES http://localhost:3000/forgot-password/${user.id}/${token}`,
