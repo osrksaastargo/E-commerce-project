@@ -77,7 +77,7 @@ const forgotPassword = async (req, res) => {
     await user.save();
 
     const mailOptions = {
-      from: "",
+      from: email,
       to: email,
       subject: "Sending Email For password Reset",
       text: `This Link Valid For 2 MINUTES http://localhost:3000/forgot-password/${user.id}/${token}`,
