@@ -1,0 +1,77 @@
+.testimonial {
+  background-color: white;
+  h1 {
+    text-align: center;
+  }
+  .container {
+    margin: 50px;
+    padding: 40px;
+    -webkit-box-shadow: 10px 10px 16px 10px rgba(0, 0, 0, 0.29);
+    box-shadow: 10px 0px 16px 10px rgba(0, 0, 0, 0.29);
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .profile-container {
+    display: flex;
+    flex-direction: row;
+    margin: -40px 40px 40px 50px;
+    .details {
+      margin-top: 180px;
+      span {
+        color: black;
+        font-weight: bold;
+      }
+      p {
+        color: #f3c93e;
+      }
+    }
+  }
+  .profile {
+    width: 130px;
+    margin-right: 25px;
+    background-color: #f3c93e;
+    padding: 55px 15px 15px 15px;
+    -webkit-clip-path: polygon(
+      35% 15%,
+      50% 0,
+      65% 15%,
+      100% 15%,
+      100% 100%,
+      0 100%,
+      0 15%
+    );
+    clip-path: polygon(
+      35% 15%,
+      50% 0,
+      65% 15%,
+      100% 15%,
+      100% 100%,
+      0 100%,
+      0 15%
+    );
+    img {
+      width: 130px;
+      height: 180px;
+      object-fit: cover;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 10px;
+
+    button {
+      background-color: #6162c494;
+      border: 1px solid;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
