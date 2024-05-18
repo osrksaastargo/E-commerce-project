@@ -1,0 +1,92 @@
+.product {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+
+  h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+  }
+
+  .marketing-img {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .marketing-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-info {
+    text-align: left;
+    width: 100%;
+  }
+
+  .rate {
+    font-weight: bold;
+    color: #b12704;
+    margin: 5px 0;
+  }
+
+  .stock-status {
+    margin: 5px 0;
+    color: #007600;
+  }
+
+  .add-to-cart {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .add-to-cart button {
+    padding: 10px;
+    border: 1px solid #007600;
+    background-color: #f0c14b;
+    color: #111;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .add-to-cart button:hover {
+    background-color: #ddb347;
+  }
+
+  .wishlistButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .wishlistButton .wish {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+
+  .wishlistButton .wish:hover {
+    transform: scale(1.2);
+  }
+}
